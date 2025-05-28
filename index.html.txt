@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Iron Man AI Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="terminal">
+    <div id="current-time"></div>
+    <div id="pulse-animation" class="speaking-animation"></div>
+    <div id="messages"></div>
+    <input type="text" id="user-input" placeholder="Type a command...">
+    <div class="controls">
+      <button id="send-btn">Send</button>
+      <button id="task-mode-btn">Task Mode</button>
+    </div>
+    <ul id="task-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
