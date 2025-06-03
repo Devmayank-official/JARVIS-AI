@@ -96,4 +96,12 @@ Jarvis AI is a simulation tool.
 No real AI backend or automation is used.
 Made for productivity, learning, and futuristic inspiration.
 
+## ⚠️ License
+
+This project is licensed under **All Rights Reserved**.  
+You may **view** the source code for reference, but you may **not copy, modify, distribute, or reuse** any part of it.
+
+Please respect the creator’s work — powered by Radha Rani’s blessings 🌼
+
+
 ⭐ Star the repo if you love building futuristic voice assistants & dev tools!
