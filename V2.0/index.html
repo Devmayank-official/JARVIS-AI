@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jarvis AI V2.0</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="terminal">
+    <h1 id="projectName">Jarvis AI V2.0</h1>
+    <div id="output" class="output"></div>
+
+    <!-- Command Input -->
+    <input type="text" id="commandInput" placeholder="Type your command here..." autocomplete="off" />
+
+    <!-- Buttons -->
+    <div class="buttons-container">
+      <button id="toggleCalc" onclick="toggleCalculator()">Toggle Calculator</button>
+      <button id="taskBtn" class="task-button" onclick="toggleTaskMode()">Tasks</button>
+    </div>
+
+    <!-- Task Mode -->
+    <div id="taskMode" class="task-mode" style="display:none;">
+      <textarea id="taskInput" placeholder="Type your tasks here..."></textarea>
+      <button onclick="saveTasks()">Save Tasks</button>
+    </div>
+
+    <!-- To-Do List Display -->
+    <div id="todoList" class="todo-list"></div>
+
+    <!-- Reminders Display -->
+    <div id="remindersList" class="reminders-list"></div>
+
+    <!-- Calculator Container -->
+    <div id="calculator" class="calculator-container" style="display:none;">
+      <div class="display" id="calcDisplay">0</div>
+      <div class="buttons">
+        <button onclick="press('7')">7</button>
+        <button onclick="press('8')">8</button>
+        <button onclick="press('9')">9</button>
+        <button onclick="press('/')">÷</button>
+
+        <button onclick="press('4')">4</button>
+        <button onclick="press('5')">5</button>
+        <button onclick="press('6')">6</button>
+        <button onclick="press('*')">×</button>
+
+        <button onclick="press('1')">1</button>
+        <button onclick="press('2')">2</button>
+        <button onclick="press('3')">3</button>
+        <button onclick="press('-')">−</button>
+
+        <button onclick="press('0')">0</button>
+        <button onclick="press('.')">.</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="press('+')">+</button>
+
+        <button onclick="clearDisplay()" class="clear">C</button>
+      </div>
+    </div>
+
+    <!-- AI Speaking Pulse -->
+    <div id="speakingPulse" class="speaking-pulse" style="display:none;"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
